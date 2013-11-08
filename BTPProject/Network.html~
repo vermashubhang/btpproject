@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3lc1nM1YvH-pWmB3DFkA7CuDZ1D90PNc&sensor=true">
+    </script>
+    
+    <script type="text/javascript">
+      var map;
+	  var count=0;
+	  var datacollection;
+	  var ans = [];
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(22.513211,88.353079),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+        
+        google.maps.event.addListener(map, 'click', function(event) {
+              placeMarker(event.latLng);
+              });
+       }
+       placeMarker();
+      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', placeMarker);
+      function placeMarker() 
+	  {
+			count++;
+			if(count==1)
+			{
+			//alert("yo");
+				var xmlhttp;
+				//var datacollection;
+				if (window.XMLHttpRequest)
+				{// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{// code for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+			
+			
+				xmlhttp.onreadystatechange=function()
+				{
+					if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						//document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+						datacollection = xmlhttp.responseText;
+						//alert(datacollection);
+						ans=JSON.parse(datacollection);
+						//alert(ans[0].start_latitude);
+						var i;
+						//
+						alert(ans.length);
+						for(i=0;i<ans.length;i++)
+						{
+							if(i==0)
+							continue;
+							var flightPlanCoordinates = [new google.maps.LatLng(ans[i-1].latitude,ans[i-1].longitude),new google.maps.LatLng(ans[i].latitude,ans[i].longitude)];
+						//flightPlanCoordinates.push(new google.maps.LatLng(ans.start_latitude,ans.start_longitude));
+						//flightPlanCoordinates.push(new google.maps.LatLng(ans.end_latitude,ans.end_longitude));
+						//flightPlanCoordinates.push(new google.maps.LatLng(ans.start_latitude,ans.start_longitude));
+						//flightPlanCoordinates.push(new google.maps.LatLng(ans.start_latitude,ans.start_longitude));
+							var flightPath = new google.maps.Polyline({
+							path: flightPlanCoordinates,
+							geodesic: true,
+							strokeColor: '#FF0000',
+							strokeOpacity: 1.0,
+							strokeWeight: 10
+							});
+							flightPath.setMap(map);
+						}
+					}
+				}
+			
+				xmlhttp.open("GET","http://localhost/dijkstra/RunTest.php",true);
+				xmlhttp.send();
+			}
+			
+			//var flightPlanCoordinates = [];
+			
+
+			/*for(var start_latitude in ans){
+				//flightPlanCoordinates.push(new google.maps.LatLng(ans.start_latitude,ans.start_longitude));
+			}*/
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+
+  //location.lng();
+/*
+  var xmlhttp;
+  
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+  
+xmlhttp.open("GET","http://localhost/write_to_file.php?lng="+location.lng()+"&lat="+location.lat(),true);
+xmlhttp.send();
+*/
+
+  //}
+    </script>
+  
+  </head>
+  
+  <body>
+    <div id="map-canvas"/>
+  </body>
+
+</html>

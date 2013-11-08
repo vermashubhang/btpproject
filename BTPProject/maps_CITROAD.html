@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3lc1nM1YvH-pWmB3DFkA7CuDZ1D90PNc&sensor=true">
+    </script>
+    
+    <script type="text/javascript">
+      var map;
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(22.513211,88.353079),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+        
+        google.maps.event.addListener(map, 'click', function(event) {
+              placeMarker(event.latLng);
+              });
+       }
+       placeMarker();
+      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', placeMarker);
+      function placeMarker() 
+	  {
+		
+		var i=0;
+		
+		var locations = <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3lc1nM1YvH-pWmB3DFkA7CuDZ1D90PNc&sensor=true">
+    </script>
+    
+    <script type="text/javascript">
+      var map;
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(22.513211,88.353079),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+        
+        google.maps.event.addListener(map, 'click', function(event) {
+              placeMarker(event.latLng);
+              });
+       }
+       placeMarker();
+      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', placeMarker);
+      function placeMarker() 
+	  {
+		
+		var i=0;
+		
+		var locations = [[22.558983,88.372618],[
+22.558394,88.37258],[
+22.557943,88.372532],[
+22.557076,88.372446],[
+22.556239,88.37236],[
+22.555198,88.372119],[
+22.554909,88.372039],[
+22.554606,88.371964],[
+22.554277,88.371883],[
+22.553953,88.371816],[
+22.553792,88.371781],[
+22.553507,88.371725],[
+22.553222,88.371668],[
+22.552821,88.371588],[
+22.552461,88.371505],[
+22.552328,88.371451],[
+22.551825,88.371312],[
+22.551337,88.371151],[
+22.550878,88.371046],[
+22.55046,88.370982],[
+22.549962,88.370942],[
+22.549422,88.370885],[
+22.549102,88.370853],[
+22.548805,88.370818],[
+22.548285,88.370773],[
+22.547775,88.370738],[
+22.547346,88.370681],[
+22.546878,88.370641],[
+22.546296,88.370563],[
+22.545736,88.370488],[
+22.545382,88.370456],[
+22.545069,88.370411]];
+
+
+		
+		for(i=0;i<33;i++)
+		{
+		       var latlng = new google.maps.LatLng(locations[i][0], locations[i][1]);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		       
+		       
+		}
+		/*
+		{
+		var latlng = new google.maps.LatLng(22.513211, 88.353079);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.513736, 88.353051);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.513949, 88.353070);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.514539, 88.352976);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.514819, 88.352906);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.515173, 88.352810);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.515805, 88.352729);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.516583, 88.352558);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.517317, 88.352448);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.518538, 88.352193);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519103, 88.352104);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519678, 88.352019);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519767, 88.351994);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.520503, 88.351820);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.520798, 88.351745);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.521286, 88.351691);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.521596, 88.351753);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522002, 88.351863);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522314, 88.351957);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522587, 88.352019);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522775, 88.352072);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523129, 88.352180);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523476, 88.352279);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523774, 88.352349);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524143, 88.352432);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524457, 88.352499);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524802, 88.352534);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525124, 88.352558);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525416, 88.352579);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525676, 88.352603);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525979, 88.352630);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.526672, 88.352676);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527009, 88.352681);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527577, 88.352735);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527921, 88.352794);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.528521, 88.352829);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529028, 88.352869);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529385, 88.352896);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529801, 88.352936);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.530054, 88.352960);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.531045, 88.353016);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.532110, 88.353078);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.533049, 88.353239);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.533604, 88.353357);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.534724, 88.353601);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.535450, 88.353818);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.535990, 88.354111);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		{
+		var latlng = new google.maps.LatLng(22.536600, 88.354357);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.537402, 88.354371);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		{
+		var latlng = new google.maps.LatLng(22.538611, 88.354556);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.539278, 88.354663);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatL[22.513211, 88.353079],
+[22.513736, 88.353051],[
+22.513949, 88.353070],[
+22.514539, 88.352976],[
+22.514819, 88.352906],[
+22.515173, 88.352810],[
+22.515805, 88.352729],[
+22.516583, 88.352558],[
+22.517317, 88.352448],[
+22.518538, 88.352193],[
+22.519103, 88.352104],[
+22.519678, 88.352019],[
+22.519767, 88.351994],[
+22.520503, 88.351820],[
+22.520798, 88.351745],[
+22.521286, 88.351691],[
+22.521596, 88.351753],[
+22.522002, 88.351863],[
+22.522314, 88.351957],[
+22.522587, 88.352019],[
+22.522775, 88.352072],[
+22.523129, 88.352180],[
+22.523476, 88.352279],[
+22.523774, 88.352349],[
+22.524143, 88.352432],[
+22.524457, 88.352499],[
+22.524802, 88.352534],[
+22.525124, 88.352558],[
+22.525416, 88.352579],[
+22.525676, 88.352603],[
+22.525979, 88.352630],[
+22.526672, 88.352676],[
+22.527009, 88.352681],[
+22.527577, 88.352735],[
+22.527921, 88.352794],[
+22.528521, 88.352829],[
+22.529028, 88.352869],[
+22.529385, 88.352896],[
+22.529801, 88.352936],[
+22.530054, 88.352960],[
+22.531045, 88.353016],[
+22.532110, 88.353078],[
+22.533049, 88.353239],[
+22.533604, 88.353357],[
+22.534724, 88.353601],[
+22.535450, 88.353818],[
+22.535990, 88.354111],[
+22.536600, 88.354357],[
+22.537402, 88.354371],[
+22.538611, 88.354556],[
+22.539278, 88.354663],[
+22.539882, 88.354768],[
+22.540553, 88.354899],[
+22.541101, 88.355039]ng(22.539882, 88.354768);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.540553, 88.354899);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.541101, 88.355039);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		*/
+		
+		
+		
+
+  //location.lng();
+/*
+  var xmlhttp;
+  
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+  
+xmlhttp.open("GET","http://localhost/write_to_file.php?lng="+location.lng()+"&lat="+location.lat(),true);
+xmlhttp.send();
+*/
+
+  //}
+    </script>
+  
+  </head>
+  
+  <body>
+    <div id="map-canvas"/>
+  </body>
+
+</html>;
+		
+		
+		for(i=0;i<54;i++)
+		{
+		       var latlng = new google.maps.LatLng(locations[i][0], locations[i][1]);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		       
+		       
+		}
+		/*
+		{
+		var latlng = new google.maps.LatLng(22.513211, 88.353079);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.513736, 88.353051);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.513949, 88.353070);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.514539, 88.352976);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.514819, 88.352906);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.515173, 88.352810);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.515805, 88.352729);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.516583, 88.352558);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.517317, 88.352448);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.518538, 88.352193);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519103, 88.352104);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519678, 88.352019);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.519767, 88.351994);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.520503, 88.351820);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.520798, 88.351745);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.521286, 88.351691);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.521596, 88.351753);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522002, 88.351863);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522314, 88.351957);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522587, 88.352019);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.522775, 88.352072);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523129, 88.352180);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523476, 88.352279);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.523774, 88.352349);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524143, 88.352432);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524457, 88.352499);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.524802, 88.352534);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525124, 88.352558);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525416, 88.352579);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525676, 88.352603);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.525979, 88.352630);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.526672, 88.352676);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527009, 88.352681);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527577, 88.352735);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.527921, 88.352794);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.528521, 88.352829);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529028, 88.352869);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529385, 88.352896);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.529801, 88.352936);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.530054, 88.352960);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.531045, 88.353016);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.532110, 88.353078);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.533049, 88.353239);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.533604, 88.353357);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.534724, 88.353601);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.535450, 88.353818);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.535990, 88.354111);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		{
+		var latlng = new google.maps.LatLng(22.536600, 88.354357);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.537402, 88.354371);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		{
+		var latlng = new google.maps.LatLng(22.538611, 88.354556);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.539278, 88.354663);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatL[22.513211, 88.353079],
+[22.513736, 88.353051],[
+22.513949, 88.353070],[
+22.514539, 88.352976],[
+22.514819, 88.352906],[
+22.515173, 88.352810],[
+22.515805, 88.352729],[
+22.516583, 88.352558],[
+22.517317, 88.352448],[
+22.518538, 88.352193],[
+22.519103, 88.352104],[
+22.519678, 88.352019],[
+22.519767, 88.351994],[
+22.520503, 88.351820],[
+22.520798, 88.351745],[
+22.521286, 88.351691],[
+22.521596, 88.351753],[
+22.522002, 88.351863],[
+22.522314, 88.351957],[
+22.522587, 88.352019],[
+22.522775, 88.352072],[
+22.523129, 88.352180],[
+22.523476, 88.352279],[
+22.523774, 88.352349],[
+22.524143, 88.352432],[
+22.524457, 88.352499],[
+22.524802, 88.352534],[
+22.525124, 88.352558],[
+22.525416, 88.352579],[
+22.525676, 88.352603],[
+22.525979, 88.352630],[
+22.526672, 88.352676],[
+22.527009, 88.352681],[
+22.527577, 88.352735],[
+22.527921, 88.352794],[
+22.528521, 88.352829],[
+22.529028, 88.352869],[
+22.529385, 88.352896],[
+22.529801, 88.352936],[
+22.530054, 88.352960],[
+22.531045, 88.353016],[
+22.532110, 88.353078],[
+22.533049, 88.353239],[
+22.533604, 88.353357],[
+22.534724, 88.353601],[
+22.535450, 88.353818],[
+22.535990, 88.354111],[
+22.536600, 88.354357],[
+22.537402, 88.354371],[
+22.538611, 88.354556],[
+22.539278, 88.354663],[
+22.539882, 88.354768],[
+22.540553, 88.354899],[
+22.541101, 88.355039]ng(22.539882, 88.354768);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.540553, 88.354899);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		{
+		var latlng = new google.maps.LatLng(22.541101, 88.355039);
+		var marker = new google.maps.Marker({
+		position: latlng,
+		map: map,
+		title: "Sarat Bose Road"
+		});
+		}
+		
+		*/
+		
+		
+		
+
+  //location.lng();
+/*
+  var xmlhttp;
+  
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+  
+xmlhttp.open("GET","http://localhost/write_to_file.php?lng="+location.lng()+"&lat="+location.lat(),true);
+xmlhttp.send();
+*/
+
+  //}
+    </script>
+  
+  </head>
+  
+  <body>
+    <div id="map-canvas"/>
+  </body>
+
+</html>
